@@ -1,7 +1,7 @@
 import { followedChannel, recommendedChannel } from "../../test/dummydata";
 //? Test Data Above
 import Link from "next/link";
-import StreamChannel from "../steamer/stream-channel";
+import StreamChannel from "../streamer/stream-channel";
 import SidePanelTitle from "./side-panel-title";
 import React from "react";
 
