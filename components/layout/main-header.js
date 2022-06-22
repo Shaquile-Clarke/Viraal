@@ -1,12 +1,12 @@
 import Button from "../ui/button";
 import Link from "next/link";
-import { SearchIcon } from "@heroicons/react/outline";
+import { SearchIcon, UserIcon } from "@heroicons/react/outline";
 
 export default function MainHeader() {
   return (
     <header className="flex p-1 text-white bg-black drop-shadow-lg z-10 justify-center items-center sticky top-0">
       <Link href={`/`}>
-        <a className="font-semibold text-5xl px-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-900 to-yellow-500 overflow-hidden">
+        <a className="font-semibold text-5xl px-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-yellow-500 overflow-hidden">
           V
         </a>
       </Link>
@@ -30,6 +30,11 @@ export default function MainHeader() {
       <Button link={`/signup`} color={`bg-blue-700`}>
         Sign Up
       </Button>
+      <Link href={`/user`}>
+        <a>
+          <UserIcon className="h-8 w-8 p-1 rounded-md m-2 hover:bg-slate-300/20" />
+        </a>
+      </Link>
     </header>
   );
 }
