@@ -35,3 +35,21 @@ export const recommendedChannel = [
     isOnline: true,
   },
 ];
+
+export const liveChannels = [];
+
+(function liveChannel() {
+  for (let i = 0; i < 50; i++) {
+    liveChannels.push({
+      image:
+        "https://images.unsplash.com/photo-1622038488881-88d94a073f4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2062&q=80",
+      profileImage:
+        "https://images.unsplash.com/photo-1592840496694-26d035b52b48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80",
+      title: "Falling harder than an astroid ...",
+      streamerName: `Jamers${i}`,
+      game: "Fall Guys",
+      viewCount: Math.floor(Math.random() * 15000) + 1,
+      categories: ["Drops Enabled", "Co-op", "English"],
+    });
+  }
+})();
