@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     <>
       <MainHeader />
       <SideBar />
-      <main className="container">{children}</main>
+      <main>{children}</main>
       <Footer />
     </>
   );
