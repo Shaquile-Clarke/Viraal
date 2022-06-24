@@ -7,7 +7,9 @@ export default function Layout({ children }) {
     <>
       <MainHeader />
       <SideBar />
-      <main>{children}</main>
+      <main className="absolute left-[263px] right-[0px] top-14 overflow-auto">
+        {children}
+      </main>
       <Footer />
     </>
   );
