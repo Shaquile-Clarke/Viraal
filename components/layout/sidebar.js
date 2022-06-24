@@ -7,7 +7,7 @@ import React from "react";
 
 export default function SideBar() {
   return (
-    <div className="h-screen bg-[#181818] drop-shadow-lg fixed text-white top-[56px]">
+    <div className="h-screen w-[256px] bg-[#181818] drop-shadow-lg fixed text-white  top-[56px]">
       <div>
         <SidePanelTitle>Followed Channels</SidePanelTitle>
         {followedChannel.map((streamer) => (
