@@ -2,6 +2,7 @@ import ChatSideBar from "../components/layout/chat-sidebar";
 import LiveStreamDisplay from "../components/streamer/livestreamdisplay";
 import Head from "next/head";
 import StreamInfo from "../components/streamer/streaminfo";
+import StreamBio from "../components/streamer/streambio";
 
 export default function Streamer({ streamerId }) {
   return (
@@ -9,13 +10,12 @@ export default function Streamer({ streamerId }) {
       <Head>
         <title>{streamerId} - Viraal</title>
       </Head>
-
-      <div className="absolute left-0 right-[384px] h-full">
+      <ChatSideBar />
+      <div className="absolute left-0 right-[384px] h-auto text-white ">
         <LiveStreamDisplay />
         <StreamInfo streamerName={streamerId} />
+        <StreamBio streamerName={streamerId} />
       </div>
-
-      <ChatSideBar />
     </>
   );
 }
