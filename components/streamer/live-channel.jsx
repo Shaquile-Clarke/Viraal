@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Path from "../ui/path";
-import Tag from "../streamer/tag";
+import Tag from "./tag";
 
 export default function LiveChannel({
   image,
@@ -34,7 +34,7 @@ export default function LiveChannel({
       </Path>
       <div className="flex w-full mt-2 jus">
         <Path href={`/${streamerName}`}>
-          <div className="h-10 w-10 overflow-hidden">
+          <div className="flex h-10 w-10 rounded-full overflow-hidden">
             <Image
               src={profileImage}
               alt={`${streamerName} Logo`}

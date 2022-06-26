@@ -10,5 +10,9 @@ export default function Button({ children, link, color }) {
       </Link>
     );
   }
-  return <button>{children}</button>;
+  return (
+    <button className={`${color} px-2 py-1 rounded mx-3 font-semibold`}>
+      {children}
+    </button>
+  );
 }
