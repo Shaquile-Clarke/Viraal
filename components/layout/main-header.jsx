@@ -4,7 +4,7 @@ import { SearchIcon, UserIcon } from "@heroicons/react/outline";
 
 export default function MainHeader() {
   return (
-    <header className="flex p-1 text-white bg-[#212121] drop-shadow-lg z-10 justify-center items-center top-0 fixed w-full ">
+    <header className="hidden xl:flex p-1 text-white bg-[#212121] drop-shadow-lg z-10 justify-center items-center top-0 fixed w-full ">
       <Link href={`/`}>
         <a className="font-semibold text-5xl px-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-yellow-500 overflow-hidden">
           V

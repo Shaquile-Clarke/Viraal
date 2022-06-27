@@ -1,4 +1,4 @@
-import ChatSideBar from "../components/layout/chat-sidebar";
+import Chat from "../components/layout/chat";
 import LiveStreamDisplay from "../components/streamer/livestreamdisplay";
 import Head from "next/head";
 import StreamInfo from "../components/streamer/streaminfo";
@@ -10,10 +10,10 @@ export default function Streamer({ streamerId }) {
       <Head>
         <title>{streamerId} - Viraal</title>
       </Head>
-      <ChatSideBar />
-      <div className="absolute left-0 right-[384px] h-auto text-white ">
+      <div className="xl:absolute xl:left-0 xl:right-[384px] h-auto text-white ">
         <LiveStreamDisplay />
         <StreamInfo streamerName={streamerId} />
+        <Chat />
         <StreamBio streamerName={streamerId} />
       </div>
     </>

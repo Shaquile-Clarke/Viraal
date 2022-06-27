@@ -2,11 +2,20 @@ import Link from "next/link";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import { StarIcon, HeartIcon } from "@heroicons/react/outline";
 
-export default function Button({ children, link, color, sub, follow }) {
+export default function Button({
+  children,
+  link,
+  color,
+  sub,
+  follow,
+  className,
+}) {
   if (link) {
     return (
       <Link href={link}>
-        <a className={`${color} px-2 py-1 rounded mx-2 font-semibold`}>
+        <a
+          className={`${color} px-2 py-1 rounded mx-2 font-semibold ${className}`}
+        >
           {children}
         </a>
       </Link>
@@ -15,7 +24,7 @@ export default function Button({ children, link, color, sub, follow }) {
   if (sub) {
     return (
       <button
-        className={`${color} px-2 py-1 rounded mx-2 font-semibold flex items-center`}
+        className={`${color} px-2 py-1 rounded mx-2 font-semibold flex items-center ${className}`}
       >
         <StarIcon className="h-5 w-5 mr-2" />
         {children}
@@ -26,7 +35,7 @@ export default function Button({ children, link, color, sub, follow }) {
   if (follow) {
     return (
       <button
-        className={`${color} px-2 py-1 rounded mx-2 font-semibold flex items-center`}
+        className={`${color} px-2 py-1 rounded mx-2 font-semibold flex items-center ${className}`}
       >
         <HeartIcon className="h-5 w-5 mr-2" />
         {children}
@@ -34,7 +43,9 @@ export default function Button({ children, link, color, sub, follow }) {
     );
   }
   return (
-    <button className={`${color} px-2 py-1 rounded mx-2 font-semibold`}>
+    <button
+      className={`${color} px-2 py-1 rounded mx-2 font-semibold ${className}`}
+    >
       {children}
     </button>
   );
