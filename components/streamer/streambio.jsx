@@ -2,7 +2,7 @@ import { BadgeCheckIcon } from "@heroicons/react/solid";
 
 export default function StreamBio({ streamerName }) {
   return (
-    <div className="container m-auto hidden xl:flex border bg-gray-400/20 rounded-2xl p-10 my-3">
+    <div className="w-4/5 m-auto hidden xl:flex bg-gray-400/20 rounded-md p-10 my-3 mb-40">
       <div>
         <h2 className="flex text-2xl font-bold items-center">
           About {streamerName}
@@ -15,7 +15,7 @@ export default function StreamBio({ streamerName }) {
           <span className="text-lime-500 font-bold">Pump &amp; Dump</span>
         </p>
         <div>
-          <p>
+          <p className="flex">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam,
             saepe velit molestiae tempora natus commodi, porro quas dolorem
             minus veniam expedita minima ab beatae eum doloremque quos! Qui,

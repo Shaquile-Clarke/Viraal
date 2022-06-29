@@ -27,7 +27,7 @@ export default function LiveChannel({
           <div className="absolute px-2 font-semibold bg-gray-700/40 rounded-md ml-2 mt-8  text-sm">
             {viewCount > 1000
               ? (viewCount / 1000).toFixed(1) + "K"
-              : `${viewCount}`}{" "}
+              : `${viewCount}`}
             viewers
           </div>
         </div>

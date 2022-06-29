@@ -8,7 +8,7 @@ import {
 
 export default function MobileNav() {
   return (
-    <div className="flex text-white w-full bg-black/50 justify-center items-center py-2">
+    <div className="flex xl:hidden text-white w-full bg-black/50 justify-center items-center py-2">
       <Link href={`/`}>
         <a className="font-semibold text-3xl ml-3 mr-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-yellow-500 overflow-hidden">
           V
