@@ -9,6 +9,7 @@ export default function Button({
   sub,
   follow,
   className,
+  onClick,
 }) {
   if (link) {
     return (
@@ -45,6 +46,7 @@ export default function Button({
   return (
     <button
       className={`${color} px-2 py-1 rounded mx-2 font-semibold ${className}`}
+      onClick={onClick}
     >
       {children}
     </button>

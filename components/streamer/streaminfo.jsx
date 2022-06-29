@@ -28,7 +28,9 @@ export default function StreamInfo({ streamerName }) {
                 <BadgeCheckIcon className="text-blue-500 h-6 mx-1" />
               </span>
             </p>
-            <p className="hidden xl:block">LUL... Season 1 Zero Hour</p>
+            <p className="hidden xl:block xl:font-semibold">
+              LUL... Season 1 Zero Hour
+            </p>
             <div className="flex flex-col items-start">
               <p className="text-sm">
                 <span className="xl:hidden">Playing&nbsp;</span>
