@@ -3,7 +3,7 @@ import { EyeIcon, XIcon } from "@heroicons/react/outline";
 export default function LoginForm({ onClose }) {
   return (
     <>
-      <div className="hidden xl:flex fixed z-20 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] ">
+      <div className="hidden xl:flex fixed z-40 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] ">
         <div className="p-8 bg-gray-900 rounded-md">
           <div className="flex justify-center">
             <div className="flex text-white">
