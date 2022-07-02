@@ -6,10 +6,17 @@ import { useState } from "react";
 
 export default function MainHeader() {
   const [isOpen, setIsOpen] = useState(false);
+  const [showLogin, setShowLogin] = useState();
+  const [showSignUp, setShowSignUp] = useState();
 
   return (
     <>
-      <Modal open={isOpen} onClose={() => setIsOpen(false)} />
+      <Modal
+        open={isOpen}
+        onClose={() => setIsOpen(false)}
+        loginShow={showLogin}
+        signUpShow={showSignUp}
+      />
       <header className="hidden xl:flex p-1 text-white bg-[#212121] drop-shadow-lg z-10 justify-center items-center top-0 xl:fixed w-full ">
         <Link href={`/`}>
           <a className="font-semibold text-4xl px-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-yellow-500 overflow-hidden">
@@ -30,10 +37,24 @@ export default function MainHeader() {
             <SearchIcon className="absolute h-full w-6 right-2 pointer-events-none " />
           </div>
         </form>
-        <Button color={`bg-gray-500`} onClick={() => setIsOpen(true)}>
+        <Button
+          color={`bg-gray-500`}
+          onClick={() => {
+            setIsOpen(true);
+            setShowLogin(true);
+            setShowSignUp(false);
+          }}
+        >
           Login
         </Button>
-        <Button link={`/signup`} color={`bg-blue-700`}>
+        <Button
+          color={`bg-blue-700`}
+          onClick={() => {
+            setIsOpen(true);
+            setShowSignUp(true);
+            setShowLogin(false);
+          }}
+        >
           Sign Up
         </Button>
         <Link href={`/user`}>

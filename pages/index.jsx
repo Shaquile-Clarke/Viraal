@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Channels from "../components/streamer/channels";
 import { liveChannels } from "../test/dummydata";
+// import { getAllCountryCodes } from "../test/data";
 
 export default function Home({ dummyData }) {
   return (
@@ -20,6 +21,7 @@ export default function Home({ dummyData }) {
 
 export async function getStaticProps() {
   const dummyData = liveChannels;
+  // const countryCodes = await getAllCountryCodes();
 
   return {
     props: { dummyData },

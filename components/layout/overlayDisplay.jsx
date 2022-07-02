@@ -1,7 +1,7 @@
 import { createPortal } from "react-dom";
-import LoginForm from "../layout/login-form";
+import LoginFormDisplay from "./login-display";
 
-export default function Modal({ open, onClose }) {
+export default function Modal({ open, onClose, loginShow, signUpShow }) {
   if (!open) return null;
 
   if (open) {
@@ -11,7 +11,11 @@ export default function Modal({ open, onClose }) {
           className="fixed top-0 bottom-0 right-0 left-0 bg-black/80 z-20 "
           onClick={onClose}
         />
-        <LoginForm onClose={onClose} />
+        <LoginFormDisplay
+          onClose={onClose}
+          loginShow={loginShow}
+          signUpShow={signUpShow}
+        />
       </>,
       document.getElementById("modal")
     );

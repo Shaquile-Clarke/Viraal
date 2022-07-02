@@ -11,7 +11,7 @@ export default function Footer() {
           Powered by <a href="https://vercel.com/">Vercel</a>
         </small>
       </div>
-      <Button link={`/signup`} color="bg-gray-500">
+      <Button color="bg-gray-500" onClick={() => setIsOpen(true)}>
         Sign Up
       </Button>
     </div>
