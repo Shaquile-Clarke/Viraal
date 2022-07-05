@@ -4,7 +4,7 @@ import Button from "../ui/button";
 
 export default function Chat() {
   return (
-    <div className="flex h-[300px] xl:block xl:fixed xl:w-[384px] xl:top-14 xl:right-0 xl:bottom-14 xl:h-screen text-white drop-shadow-lg bg-[#181818] xl:border-l xl:border-gray-400">
+    <div className="flex h-[300px] xl:block xl:fixed xl:w-[384px] xl:top-12 xl:right-0 xl:bottom-14 xl:h-screen text-white drop-shadow-lg bg-[#181818] xl:border-l xl:border-gray-400">
       <div className="hidden xl:flex  justify-center w-full items-center border-b border-gray-400 text-center py-2">
         <ArrowRightIcon className="absolute left-2 h-8 w-8 p-1 rounded-md hover:bg-slate-300/20" />
         <div className="text-center">

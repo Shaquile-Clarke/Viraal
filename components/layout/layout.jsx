@@ -8,7 +8,7 @@ export default function Layout({ children }) {
     <>
       <MainHeader />
       <MobileNav />
-      <main className="xl:absolute xl:left-[263px] xl:right-0 xl:top-14 h-full">
+      <main className="xl:absolute xl:left-[263px] xl:right-0 xl:top-12 ">
         {children}
       </main>
       <SideBar />

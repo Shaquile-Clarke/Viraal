@@ -7,12 +7,12 @@ export default function Home({ dummyData }) {
   return (
     <>
       <Head>
-        <title>Viraal</title>
+        <title>{`Viraal`}</title>
         <meta
           name="description"
           content="Twitch clone built as a portfolio project by Shaquile Clarke. No copyright infringement intended."
         />
-        <link rel="icon" href="../public/favicon/favicon.ico" />
+        <link rel="icon" href="favicon/favicon.ico" />
       </Head>
       <Channels liveChannels={dummyData} />
     </>

@@ -8,7 +8,7 @@ export default function Streamer({ streamerId }) {
   return (
     <>
       <Head>
-        <title>{streamerId} - Viraal</title>
+        <title>{`${streamerId} - Viraal`}</title>
       </Head>
       <div className="xl:absolute xl:left-0 xl:right-[384px] h-auto text-white ">
         <LiveStreamDisplay />
@@ -20,11 +20,20 @@ export default function Streamer({ streamerId }) {
   );
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const { params } = context;
-  console.log(params);
+  const streamerId = params.streamId;
+  console.log(streamerId);
 
   return {
-    props: { streamerId: params.streamId },
+    props: { streamerId },
+    revalidate: 60,
+  };
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: [{ params: { streamId: "Jamers0" } }],
+    fallback: "blocking",
   };
 }

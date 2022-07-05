@@ -2,6 +2,8 @@ import { XIcon } from "@heroicons/react/outline";
 import LoginForm from "../layout/login-form";
 import SignUpForm from "./signup-form";
 import { useState } from "react";
+import Image from "next/image";
+import Logo from "../../public/images/Logo.png";
 
 export default function LoginFormDisplay({ onClose, loginShow, signUpShow }) {
   const [displayLogin, setDisplayLogin] = useState(loginShow);
@@ -12,10 +14,8 @@ export default function LoginFormDisplay({ onClose, loginShow, signUpShow }) {
       <div className="p-8 bg-gray-900 rounded-md">
         <div className="flex justify-center">
           <div className="flex text-white">
-            <div className="font-semibold text-5xl px-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-yellow-500 overflow-hidden ">
-              V
-            </div>
-            <p className="font-semibold text-2xl flex items-center ">
+            <Image src={Logo} alt={`Viraal Logo`} width={40} height={40} />
+            <p className="font-semibold text-2xl flex items-center ml-4 ">
               Log into Viraal
             </p>
           </div>

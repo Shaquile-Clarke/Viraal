@@ -11,9 +11,9 @@ import { UserIcon } from "@heroicons/react/solid";
 export default function StreamInfo({ streamerName }) {
   return (
     <>
-      <div className="flex p-3 justify-between ">
-        <div className="flex">
-          <div className="flex rounded-full overflow-hidden mr-3 h-12 w-12  xl:h-20 xl:w-20 border-4 border-blue-500">
+      <div className="flex p-3 justify-between items-center ">
+        <div className="flex items-center ">
+          <div className="flex rounded-full mr-3 h-full w-12 overflow-hidden  xl:h-20 xl:w-20 border-4 border-blue-500">
             <Image
               src={`https://images.unsplash.com/photo-1526489561696-1a5a2b82de4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80`}
               alt={`${streamerName} Logo`}
@@ -21,6 +21,7 @@ export default function StreamInfo({ streamerName }) {
               height={80}
             />
           </div>
+
           <div>
             <p className="flex flex-col xl:flex-row">
               <span className="flex font-bold">
